@@ -2,13 +2,27 @@
 <html lang="en-US">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Coding Template</title>
+  <title>Bil Catalog</title>
   <link rel="stylesheet" type="text/css" href="bundle.css">
 </head>
 
 <body>
-  <h1>Webpack - TypeScript - Scss</h1>
-  <h2>TypeScript Hello World</h2>  
+  <h1>Kald til car restservice</h1>
+  <h2>Add or Update car</h2>
+  <div>
+    <input type="text" id="modelInput" placeholder="Model"><br>
+    <input type="text" id="vendorInput" placeholder="Vendor"><br>
+    <input type="number" id="priceInput" placeholder="Price">
+  </div>
+  <input type="button" value="Add car to list" id="postBtn">
+
+  <h2>Delete all cars</h2>
+  <input type="text" id="deleteId" placeholder="Id">
+  <button id="deleteBtn">Delete a car</button>
+  <input type="button" value="Delete all (DO NOT CLICK)" id="deleteAllBtn">
+  
+  <h2>Get all cars</h2>
+  <input type="button" value="Get all cars" id="getAllBtn">
   <div id="content"></div>
     
   <script src="bundle.js"></script>
